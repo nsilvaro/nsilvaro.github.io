@@ -1,16 +1,96 @@
-<!DOCTYPE html>
-<html>
-  <meta charset="UTF-8">
-  <title>Naassom's Page</title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Naassom Dev Studio</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #fff8e7;
+        --ink: #2c1874;
+        --soft: #5b4a99;
+        --gold: #ffc73a;
+        --card: #ffffff;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #1d1245;
+          --ink: #fff3cf;
+          --soft: #c9bdf5;
+          --card: #2a1b63;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font:
+          17px/1.6 system-ui,
+          -apple-system,
+          'Segoe UI',
+          sans-serif;
+      }
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 32px 20px 64px;
+      }
+      h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin: 0 0 8px;
+      }
+      h2 {
+        font-size: 1.25rem;
+        margin: 2rem 0 0.4rem;
+        border-bottom: 3px solid var(--gold);
+        display: inline-block;
+        padding-bottom: 2px;
+      }
+      p,
+      li {
+        color: var(--ink);
+      }
+      small,
+      .meta {
+        color: var(--soft);
+      }
+      a {
+        color: inherit;
+        text-underline-offset: 3px;
+      }
+      nav {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin: 0 0 24px;
+        font-weight: 600;
+      }
+      .card {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 4px 20px 16px;
+        margin: 16px 0;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08);
+      }
+    </style>
+  </head>
   <body>
-    <img src="Child_of_the_one_true_king.jpg">
-    <h1>Hello my name is ...</h1>
-    
-    <p>Child of the one true king  <em>I've been saved,</br> 
-      I've been changed,</br>
-      I have been set free 
-      <strong><em>Amazing grace, it's the song I sing</em></strong></p>
-
+    <main>
+      <nav>
+        <a href="/">Naassom Dev Studio</a><a href="/infiniterun/privacy.html">Privacy</a><a href="/infiniterun/support.html">Support</a>
+      </nav>
+      <h1>Naassom Dev Studio</h1>
+      <p>Small, relaxing games.</p>
+      <div class="card">
+        <h2>Minesweeper Infinite Run</h2>
+        <p>A cozy minesweeper puzzle adventure for iPhone, with hex and square boards, daily contracts and endless worlds to explore.</p>
+        <p><a href="/infiniterun/support.html">Support</a> &middot; <a href="/infiniterun/privacy.html">Privacy policy</a></p>
+      </div>
+    </main>
   </body>
 </html>
- 
