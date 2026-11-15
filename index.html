@@ -70,6 +70,38 @@
         margin: 0 0 24px;
         font-weight: 600;
       }
+      .game {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-top: 16px;
+      }
+      .game h2 {
+        margin: 0;
+        min-width: 0;
+      }
+      @media (max-width: 380px) {
+        .icon {
+          width: 56px;
+          height: 56px;
+          border-radius: 13px;
+        }
+      }
+      /* very narrow screens: the icon sits above the name, so a long name never breaks mid-word */
+      @media (max-width: 340px) {
+        .game {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+        }
+      }
+      .icon {
+        width: 72px;
+        height: 72px;
+        flex: none;
+        border-radius: 16px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+      }
       .card {
         background: var(--card);
         border-radius: 16px;
@@ -89,24 +121,34 @@
       <h1>Naassom Dev Studio</h1>
       <p>Small, relaxing games.</p>
       <div class="card">
-        <h2>Minesweeper Infinite Run</h2>
+        <div class="game">
+          <img class="icon" src="/infiniterun/icon.png" alt="" width="72" height="72" />
+          <h2>Minesweeper Infinite Run</h2>
+        </div>
         <p>
           A cozy minesweeper puzzle adventure for iPhone, with hex and square
           boards, daily contracts and endless worlds to explore.
         </p>
         <p>
+          <span class="meta">Coming soon to the App Store</span> &middot;
           <a href="/infiniterun/support.html">Support</a> &middot;
           <a href="/infiniterun/privacy.html">Privacy policy</a>
         </p>
       </div>
       <div class="card">
-        <h2>NumberPaint Connect</h2>
+        <div class="game">
+          <a href="https://apps.apple.com/app/id6833209813"
+            ><img class="icon" src="/numberpaintconnect/icon.png" alt="NumberPaint Connect on the App Store" width="72" height="72"
+          /></a>
+          <h2>NumberPaint Connect</h2>
+        </div>
         <p>
           A calm number-pair puzzle for iPhone: link the pairs and a hidden
           picture paints itself in. 300 pictures, a daily puzzle and your own
           photos.
         </p>
         <p>
+          <a href="https://apps.apple.com/app/id6833209813">App Store</a> &middot;
           <a href="/numberpaintconnect/support.html">Support</a> &middot;
           <a href="/numberpaintconnect/privacy.html">Privacy policy</a>
         </p>
